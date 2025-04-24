@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators,ReactiveFormsModule, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 
 interface RegisterData{
@@ -14,11 +16,12 @@ interface RegisterData{
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrl: './register.component.css',
-  imports: [ReactiveFormsModule]
+  imports: [ReactiveFormsModule, CommonModule, RouterModule]
 })
 export class RegisterComponent {
   registerForm: FormGroup;
   errorMessage = '';
+  loading = false;
 
   constructor(
     private fb: FormBuilder,
@@ -41,4 +44,9 @@ export class RegisterComponent {
       });
     }
   }
+
+  get f() {
+    return this.registerForm.controls;
+  }
+  
 }
