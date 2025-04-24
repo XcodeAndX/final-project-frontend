@@ -1,0 +1,53 @@
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top left, #d9e4f5, #f7fbff);
+  }
+  
+  .dashboard-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .dashboard-card h1 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .dashboard-card .info-section {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+  
+  .dashboard-card ul {
+    padding-left: 1rem;
+    list-style-type: none;
+  }
+  
+  .status-ok {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .logout-btn {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c82333;
+  }
+  
