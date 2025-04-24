@@ -31,9 +31,10 @@ export class LoginComponent {
           this.auth.guardarToken(res.token);
   
           const decoded: any = jwtDecode(res.token);
-          const role = decoded.role;
+          const roles: string[] = decoded.roles || [];
+          console.log('Roles del usuario:', roles);
   
-          if (role === 'admin') {
+          if (decoded.roles.includes('admin')) {
             this.router.navigate(['/usuarios']);
           } else {
             this.router.navigate(['/dashboard']);

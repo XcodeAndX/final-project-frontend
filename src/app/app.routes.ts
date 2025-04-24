@@ -3,10 +3,12 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { authGuard } from './app/guards/auth.guard';
+import { UserlistComponent} from './pages/userlist/userlist.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'dashboard', canActivate:[authGuard] ,component: DashboardComponent }
+  { path: 'dashboard', canActivate:[authGuard] ,component: DashboardComponent },
+  { path: 'usuarios', canActivate:[authGuard], component: UserlistComponent  }
 ];
