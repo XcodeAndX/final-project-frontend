@@ -4,41 +4,30 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ## Development server
 
-To start a local development server, run:
+
+
+## Detalles del proyecto
+
+Para este front se debe tener en cuenta varias cosas, lo primero es clonar los repositorios correspondientes al back y al front
+
+```bash
+git clone https://github.com/XcodeAndX/final-project-frontend.git
+git clone https://github.com/XcodeAndX/Backend-final-project-web-development.git
+
+```
+
+To start a local development server in angular, run:
 
 ```bash
 ng serve
 ```
-
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+To start a local development server in node for backend, run:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+``` bash
+node app.js
 ```
+Se estara ejecutando en el `http://localhost:3000/`
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-
-
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+con ambas partes funcionando, ya se podria ejecutar sin problema la aplicación web.
